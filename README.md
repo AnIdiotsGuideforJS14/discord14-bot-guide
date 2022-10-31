@@ -10,6 +10,8 @@ This guides attempts to humanize the horrid discordjs 14 documentation, in it's 
 
 Like the previous guide, this documentation expects a rudimentary understanding of JavaScript, so keep that in mind when going into this.
 
+Some things to note, when I say JS14, I am referring to Discord JavaScript 14. 
+
 This introduction is very bare-bones, I just wanted something to put here. I am unsure of how long these docs will take, as I am only one guy. 
 
 # Support
