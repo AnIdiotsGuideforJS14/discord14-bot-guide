@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.720537854709">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.720539685342">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Frequently Asked Questions</title>
-    <meta name="title" content="Frequently Asked Questions">
-    <meta name="description" content="Similar to the previous guide, this page has some FAQ's that people ask regarding JS14." />
+    <title>Examples</title>
+    <meta name="title" content="Examples">
+    <meta name="description" content="Similar to the previous guide, this page has some FAQ's that people ask regarding JS14. These are generic examples" />
 
     <!-- Canonical -->
     <link rel="canonical" href="/frequently-asked-questions/" />
@@ -19,22 +19,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="/frequently-asked-questions/">
-    <meta property="og:title" content="Frequently Asked Questions">
-    <meta property="og:description" content="Similar to the previous guide, this page has some FAQ's that people ask regarding JS14.">
+    <meta property="og:title" content="Examples">
+    <meta property="og:description" content="Similar to the previous guide, this page has some FAQ's that people ask regarding JS14. These are generic examples">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/frequently-asked-questions/">
-    <meta property="twitter:title" content="Frequently Asked Questions">
-    <meta property="twitter:description" content="Similar to the previous guide, this page has some FAQ's that people ask regarding JS14.">
+    <meta property="twitter:title" content="Examples">
+    <meta property="twitter:description" content="Similar to the previous guide, this page has some FAQ's that people ask regarding JS14. These are generic examples">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=2.4.0.720537854709" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.720539685342" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.720537854709" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.720539685342" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.720537854709" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.720539685342" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.720539685342" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -166,13 +167,25 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="frequently-asked-questions" class="break-words">
+<p>Similar to the previous guide, this page has some FAQ&#x27;s that people ask regarding JS14.
+These are <strong>generic examples</strong> and will do <strong>NOTHING</strong> if you insert them into your code.
+You must understand what they do.</p>
+<p>In V14, there is a new enum called <em>ActivityType</em>, and can be used to set presence and status.</p>
+<doc-anchor-target id="examples" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#frequently-asked-questions">#</doc-anchor-trigger>
-        <span>Frequently Asked Questions</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#examples">#</doc-anchor-trigger>
+        <span>Examples</span>
     </h1>
 </doc-anchor-target>
-<p>Similar to the previous guide, this page has some FAQ&#x27;s that people ask regarding JS14.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">// This will set your bot as watching AnIdiotsGuide in Do-Not-Disturb
+const { Client, GatewayIntentBits, ActivityType } = require('discord.js'); //import discord.js 
+
+client.user.setPresence({
+  activities: [{ name: `AnIdiotsGuide`, type: ActivityType.Watching }],
+  status: 'dnd',
+});</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -232,6 +245,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Frequently Asked Questions", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Examples", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
